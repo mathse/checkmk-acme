@@ -37,7 +37,7 @@ The examples in this README assume the following layout:
 ├── .acme.sh/
 │   └── deploy/
 │       └── checkmk_appliance.sh
-└── acme/
+└── checkmk-acme/
     ├── cma-acme.sh
     ├── cma-acme.conf
     └── deploy/
@@ -47,7 +47,7 @@ The examples in this README assume the following layout:
 The wrapper script expects the configuration file to be located at:
 
 ```text
-/root/acme/cma-acme.conf
+/root/checkmk-acme/cma-acme.conf
 ```
 
 and installs the deploy hook into:
@@ -182,7 +182,7 @@ Running the wrapper on both nodes is safe because standby nodes automatically ex
 Example:
 
 ```cron
-0 3 * * * /root/acme/cma-acme.sh renew >/var/log/cma-acme.log 2>&1
+0 3 * * * /root/checkmk-acme/cma-acme.sh renew > /root/checkmk-acme/cma-acme.log 2>&1
 ```
 
 ---
