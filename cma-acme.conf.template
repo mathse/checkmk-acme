@@ -1,0 +1,13 @@
+# Basic Config
+CERT_DOMAIN="monitor.example.com"
+ACME_SERVER="letsencrypt"
+
+# Installation directory of acme.sh
+ACME_HOME="/root/.acme.sh"
+
+# Arguments passed to:
+#   acme.sh --issue
+#
+# Everything supported by acme.sh can be used here.
+ACME_ISSUE_ARGS="--server $ACME_SERVER --dns dns_custom -d $CERT_DOMAIN"
+
