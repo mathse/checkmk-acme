@@ -114,7 +114,6 @@ Example:
 ```bash
 # Basic Config
 CERT_DOMAIN="monitor.example.com"
-INCLUDE_NODE_NAMES=1
 ACME_SERVER="letsencrypt"
 
 ACME_HOME="/root/.acme.sh"
