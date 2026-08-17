@@ -6,6 +6,18 @@ This project automates certificate management for Checkmk Appliances by using th
 
 It supports both **standalone appliances** and **Checkmk Appliance clusters**.
 
+## Disclaimer
+
+This project uses internal, undocumented Checkmk Appliance Python APIs.
+
+It is **not** affiliated with or supported by Checkmk GmbH.
+
+Using this project may affect your support entitlement and future appliance
+updates may require adjustments to this project.
+
+It has been created as a community project for users who understand these
+limitations.
+
 ## Features
 
 * Automatic Let's Encrypt (or any ACME CA supported by acme.sh)
